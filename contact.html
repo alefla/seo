@@ -61,12 +61,26 @@
 
       gtag("config", "G-WG1KBXX7R1");
     </script>
+    <style>
+      form-container {
+        display: flex;
+      }
+      input {
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+      }
+      .submit {
+        padding: 0.5rem 1rem;
+        border: black 1px solid;
+        border-radius: 5px;
+      }
+    </style>
   </head>
 
   <body>
     <div>
       <header>
-        <p class="banner">
+        <p id="banner">
           <img src="logo.png" alt="SC logo" />Celone S - CNIT 132S
         </p>
       </header>
@@ -91,55 +105,47 @@
           to give an idea of my works.
         </p>
         <form name="myForm" action="#" method="POST">
-          <table>
-            <tr>
-              <td>
-                <label>First Name: </label>
-              </td>
-              <td>
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="First Name"
-                  autofocus
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Last Name: </label>
-              </td>
-              <td>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  placeholder="Last Name"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Email address: </label>
-              </td>
-              <td>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="email address"
-                  required
-                />
-              </td>
-            </tr>
-          </table>
+          <div class="form-container">
+            <div>
+              <label for="fname">First Name: </label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                autofocus
+                required
+              />
+            </div>
+
+            <div>
+              <label for="lname">Last Name: </label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email address: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email address"
+                required
+              />
+            </div>
+          </div>
           <p>Comment:</p>
-          <textarea id="comment" name="comment" rows="10" cols="30"></textarea>
+          <textarea id="comment" name="comment" rows="10" cols="30">
+your message</textarea
+          >
           <br />
-          <button type="submit">Submit</button>
+          <button class="submit" type="submit">Submit</button>
         </form>
       </main>
       <footer>
