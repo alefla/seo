@@ -112,6 +112,7 @@ img:hover {
 }
 .form-container {
   display: flex;
+  flex-direction: column;
 }
 input {
   padding: 0.3rem;
