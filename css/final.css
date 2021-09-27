@@ -31,11 +31,12 @@ header {
   padding-top: 10px;
   font-family: "Playfair Display", serif;
 }
-header h1 img {
+.banner img {
   float: left;
   margin: 0 10px 0 0;
 }
-header h1 {
+.banner {
+  font-size: 2rem;
   display: inline-block;
 }
 nav {
@@ -70,8 +71,8 @@ nav li a:hover {
 nav li a {
   color: dimgrey;
 }
-h2 {
-  font-size: 30px;
+h1 {
+  font-size: 1.5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
 }
